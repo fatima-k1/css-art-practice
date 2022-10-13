@@ -1,0 +1,50 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.pepsi {
+    height: 300px;
+    width: 300px;
+    background-color: #1B52A2;
+    border-radius: 50%;
+    border: 10px solid white;
+    position: relative;
+    overflow: hidden;
+}
+
+.pepsi::before {
+    content: "";
+    position: absolute;
+    height: 400px;
+    width: 500px;
+    background-color: white;
+    border-radius: 25%;
+    top: -160px;
+    left: -240px;
+    transform: rotate(-18deg);
+}
+
+.pepsi::after {
+    content: "";
+    position: absolute;
+    height: 500px;
+    width: 550px;
+    border-radius: 50%;
+    background-color: #EE1330;
+    top: -256px;
+    left: -315px;
+}
+
+.style {
+    font-family: 'Comfortaa', cursive;
+    color: #1B52A2;
+    text-align: center;
+    font-size: 100px;
+    font-weight: bold;
+    position: absolute;
+    bottom: -80px;
+}
